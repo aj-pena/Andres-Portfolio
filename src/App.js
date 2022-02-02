@@ -1,28 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/pages/About';
+import Fun from './components/pages/Fun';
+import Gallery from './components/pages/Gallery';
+import Resume from './components/pages/Resume';
 
-function App() {
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
+import './style.css'
+
+export default function App() {
+  const [ currentPage, setCurrentPage] = useState(0);
+ function renderPage(){
+  switch (currentPage){
+    default:
+      return <About/>;
+    case 0:
+      return <About/>;      
+    case 1: 
+      return <Gallery/>;
+    case 2:
+      return <Fun/>;
+    case 3:
+      return <Resume/>;
+    
+  }
+  
+ };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-         Wohooo, we did it!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header setCurrentPage={setCurrentPage} />
+      {renderPage()}
+      <Footer/>        
     </div>
   );
 }
 
-export default App;
+

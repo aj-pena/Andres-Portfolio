@@ -1,0 +1,270 @@
+:root{
+    box-sizing: border-box;
+}
+
+*{
+    opacity: 98%;
+    font-family: 'Lora', serif;
+}
+
+/* -------HEADER------------- */
+/* header styling */
+.header{
+    padding-right: 3%;
+    padding-left: 9%;
+    padding-bottom: 2vh;
+    background: rgba(28, 49, 68);
+    color: white;       
+}
+#myName{
+    padding-left: 2vw;
+    padding-top: 2vh;
+    font-size: 150%;
+    margin-bottom: 0;
+}
+h1 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-weight: bold; 
+}
+h1 a:hover,
+h1 a:focus{
+    background-color: #cecbcb;
+}
+.navigation{
+    background: rgba(28, 49, 68);
+}
+.headerBtns{
+    background: rgba(28, 49, 68);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+  
+li {
+    float: right;
+    min-width: 10vw;
+    margin-right: 1vw;
+}
+  
+li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+}
+  
+li a:hover {
+    background-color: #cecbcb;
+}
+button {
+    display: block;
+    color: white;
+    background: none;
+    opacity: 0.9;
+    border: none;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18pt;
+    font-family: 'Lora', serif;
+}
+button:hover {
+    background-color: #cecbcb;
+}
+   /* -------RIBBON------------- */
+.ribbon-wrapper{
+    margin-top: 0;
+}
+.ribbon{
+/* https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=663&q=80 */
+  background: url(./Assets/images/p4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+/* -------CONTENT------------- */
+h2 a,
+.section-title h2 {
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+.section-title {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center; 
+   border-right: solid  rgba(28, 49, 68) 3px;
+   padding-top: 3vh; 
+}
+.about {
+    margin-top: 3vh;    
+}
+#about-me{
+    font-size: 150%;
+    text-align: justify;
+    padding: 2em;   
+}
+/* Work section */
+.work{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.apps{
+    display: flex;
+    flex-wrap: wrap;
+}
+.medium-app{
+    width: 48%;
+    height:auto;
+    margin-left:1%;
+    margin-bottom:1%;
+}
+.card{
+    background: rgba(28, 49, 68, 0.8);
+    color: white;
+    font-size: 12px;
+}
+.card-link{
+    color: rgb(151, 201, 245);
+}
+/* Resume section */
+
+.resume{
+    margin-top: 3vh;
+}
+.resumeUl{
+    list-style: disc;
+    padding: 2%;    
+}
+.resumeList{
+    float:none;
+    min-width: 10vw;
+    margin-right: 1vw;
+    font-size: 120%;      
+}
+
+/* Contact section */
+#contact-me-section{
+    text-decoration: none;
+    color: currentColor;
+}
+.contact{
+    margin-top: 1%;
+    min-height: 10vh;
+    padding-left: 0.5%;
+    padding-right:1%;
+    margin-bottom: 3vh;    
+}
+.contact-methods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 1%;
+}
+.form-group{
+    width: 70vw;
+    padding-left:35vw;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    background-color: whitesmoke;
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+/* Greeting */
+h1 {
+    margin:5% 10%;
+    font-weight: bolder;
+    order: 2;
+    height: fit-content;
+    font-family: 'Lora', serif;
+    font-size: 32pt;
+    flex: 1 1 auto;
+}
+/* Format ribbon */
+.ribbon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding-right: 3vw;
+}
+/* Format my photograph */
+.me{
+    display: block;
+    margin: 0;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 2vh;
+}
+#subtitle{
+    padding: 0.5% 1%;
+    display: inline-block;
+    background-color: rgba(22, 23, 25, 0.4);
+    color: white;
+    
+    
+}
+
+/* Format my name specifically */
+#myName {
+    font-family: 'Lora', serif;
+    font-size: 24pt;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 0.5%;
+    padding-left: 0.5%;
+    max-width: 400px;
+    text-align: left;
+    order: 3;
+}
+span {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.copy-resume{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .card-medium{
+        width:100% !important;
+    }
+    .medium-app{
+        width: 100%;
+        height:auto;
+    }
+    .ribbon #subtitle{
+        margin: 0 1em;
+    }
+}
+@media screen and (max-width: 600px){
+    #myName {
+        text-align: center;
+    }
+    .resumeUl{  
+        margin: 0 35%;
+        width: 50%;        
+    }    
+    
+}
