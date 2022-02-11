@@ -4,7 +4,7 @@
 
 *{
     opacity: 98%;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* -------HEADER------------- */
@@ -117,7 +117,7 @@ h2 a,
 #about-me{
     font-size: 150%;
     text-align: justify;
-    padding: 2em;   
+    padding: 1em;   
 }
 /* Work section */
 .work{
@@ -263,7 +263,7 @@ span {
         text-align: center;
     }
     .resumeUl{  
-        margin: 0 35%;
+        margin-left: 1em;
         width: 50%;        
     }    
     
