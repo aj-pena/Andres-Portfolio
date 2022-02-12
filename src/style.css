@@ -12,15 +12,16 @@
 .header{
     padding-right: 3%;
     padding-left: 9%;
-    padding-bottom: 2vh;
     background: rgba(28, 49, 68);
-    color: white;       
+    color: white; 
 }
-#myName{
-    padding-left: 2vw;
-    padding-top: 2vh;
-    font-size: 150%;
-    margin-bottom: 0;
+#myName{    
+    font-size: 24pt;
+    margin: 0;
+    padding-top: .7em;  
+    padding-left: 0.5%;
+    max-width: 400px;
+    text-align: left;
 }
 h1 a{
     display: block;
@@ -30,7 +31,7 @@ h1 a{
 }
 h1 a:hover,
 h1 a:focus{
-    background-color: #cecbcb;
+    background-color:  rgb(103, 141, 175);
 }
 .navigation{
     background: rgba(28, 49, 68);
@@ -39,7 +40,11 @@ h1 a:focus{
     background: rgba(28, 49, 68);
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;    
+    justify-content:center;        
+}
+.headerBtns button { 
+    padding-top: 1em;  
+    padding-bottom: 1em;
 }
 
 ul {
@@ -67,7 +72,9 @@ li a {
 }
   
 li a:hover {
-    background-color: #cecbcb;
+    background-color:rgb(55, 83, 109);
+    border-radius: 10px;
+    color: whitesmoke;
 }
 button {
     display: block;
@@ -80,10 +87,11 @@ button {
     text-decoration: none;
     font-weight: 600;
     font-size: 18pt;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
 }
 button:hover {
-    background-color: #cecbcb;
+    background-color:  rgb(68, 98, 124);
+    border-radius: 10px;
 }
    /* -------RIBBON------------- */
 .ribbon-wrapper{
@@ -101,7 +109,7 @@ button:hover {
 h2 a,
 .section-title h2 {
     font-weight: 600;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
 }
 .section-title {
    display: flex;
@@ -180,23 +188,13 @@ h2 a,
     width: 70vw;
     padding-left:35vw;
 }
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:left;
-    background-color: whitesmoke;
-    margin: 0;
-    padding-top: 2%;
-    padding-left: 2%;
-}
 /* Greeting */
 h1 {
     margin:5% 10%;
     font-weight: bolder;
     order: 2;
     height: fit-content;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 32pt;
     flex: 1 1 auto;
 }
@@ -222,19 +220,6 @@ h1 {
     color: white;
     
     
-}
-
-/* Format my name specifically */
-#myName {
-    font-family: 'Lora', serif;
-    font-size: 24pt;
-    margin: 0;
-    padding-top: 5%;
-    padding-bottom: 0.5%;
-    padding-left: 0.5%;
-    max-width: 400px;
-    text-align: left;
-    order: 3;
 }
 span {
     font-size: 0.5rem;
